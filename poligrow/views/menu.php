@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Principal</title>
+    <title>Poligrow - Pantalla de Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Ruta al archivo CSS -->
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -14,28 +16,54 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="CierreForm.php">Registrar Quincena</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ver_quincena.php">Ver Quincena</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="soporte.php">Soporte</a>  
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <h1>Bienvenido al Sistema de Cierres de Quincena</h1>
-        <p>Selecciona una opción en la barra de navegación para comenzar.</p>
-    </div>
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Bienvenido a Cierres Poligrow</h1>
+            <p class="lead">Tu plataforma para gestionar las quincenas de la empresa de manera eficiente</p>
+            <a href="CierreForm.php" class="btn btn-warning btn-lg">Comienza Ahora</a>
+        </div>
+    </header>
 
-    <!-- Bootstrap JS -->
+    <main>
+        <section class="features py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">¿Qué Ofrecemos?</h2>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a href="CierreForm.php" class="card mb-4 shadow-sm text-decoration-none text-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Registrar Quincena</h5>
+                                <p class="card-text">Facilita el registro de quincenas de forma rápida y sencilla.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="ver_quincena.php" class="card mb-4 shadow-sm text-decoration-none text-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Ver Quincena</h5>
+                                <p class="card-text">Consulta tu última quincena abierta.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="soporte.php" class="card mb-4 shadow-sm text-decoration-none text-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Soporte</h5>
+                                <p class="card-text">Accede a nuestro soporte para resolver cualquier duda.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 bg-light">
+        <p>&copy; 2024 Poligrow IT. Todos los derechos reservados.</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
