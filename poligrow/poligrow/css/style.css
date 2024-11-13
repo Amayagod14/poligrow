@@ -1,0 +1,127 @@
+/* Estilo del navbar */
+.navbar {
+    background-color: #4A90E2; /* Color de fondo azul */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    color: #ffffff; /* Color de texto blanco */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.navbar-brand:hover {
+    color: #FFD700; /* Color dorado al pasar el ratón */
+}
+
+.nav-link {
+    color: #ffffff; /* Color de texto blanco */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    margin-right: 15px; /* Espacio entre enlaces */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.nav-link:hover {
+    color: #FFD700; /* Color dorado al pasar el ratón */
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Estilo para el botón del menú */
+.navbar-toggler {
+    border: none; /* Sin borde */
+}
+
+.navbar-toggler-icon {
+    background-color: #FFD700; /* Color dorado para el icono */
+}
+
+/* Estilo de colapso del navbar */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #4A90E2; /* Fondo azul para el menú colapsado */
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center; /* Alinear los elementos al centro */
+    }
+}
+
+/* Estilos para la sección de bienvenida */
+.hero {
+    background-image: url('tu-imagen-de-fondo.jpg'); /* Cambia la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0; /* Espacio superior e inferior */
+    border-bottom: 5px solid #FFD700; /* Borde inferior dorado */
+    text-align: center; /* Centrar texto */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Tamaño de fuente grande para el título */
+    font-weight: bold; /* Negrita */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Tamaño de fuente para el subtítulo */
+}
+
+/* Estilos para las características */
+.features {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    padding: 50px 0; /* Espaciado superior e inferior */
+}
+
+.card {
+    border: none; /* Sin borde en las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Transición suave para el hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #4A90E2; /* Color de fondo azul */
+    color: rgb(48, 47, 47); /* Color del texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+
+h2 {
+    color: #4A90E2; /* Color del título en azul */
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: 600; /* Negrita en las etiquetas */
+}
+
+.form-control, .form-select {
+    border-radius: 10px; /* Bordes redondeados en los campos */
+    border: 1px solid #ced4da; /* Bordes suaves */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Sombra azul suave al enfocar */
+    border-color: #4A90E2; /* Color de borde en azul */
+}
+
+.btn-primary {
+    background-color: #4A90E2; /* Azul primario */
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD; /* Azul más oscuro al hacer hover */
+}
